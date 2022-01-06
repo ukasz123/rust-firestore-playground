@@ -1,0 +1,3 @@
+[workspace]
+members = ["core", "cli", "server", "ffi"]
+default-members = ["core", "cli"]

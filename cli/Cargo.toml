@@ -1,0 +1,15 @@
+[package]
+name = "rust-firestore-snapshot-cli"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+rust-firestore-snapshot-core = {path = "../core"}
+firestore_grpc = "0.95.0"
+clap = { version = "3.0.0" , features = ["derive"]}
+tokio = { version = "1.16.1", features = ["full"]}
+
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+rand = {version= "*", optional = true}
