@@ -21,12 +21,14 @@ struct CliArgs {
 
     /// Path to the collection in Firestore
     /// Required in `get` mode.
+    #[clap(short, long)]
     collection: Option<String>,
 
     /// Path to the parent document for the collection in Firestore.
     ///
     /// Collection from the JSON file would be saved as a subcollection of a document found on this path.
     /// Required in `post` mode.
+    #[clap(short, long)]
     parent_document: Option<String>,
 
     /// Path to the file
